@@ -87,6 +87,12 @@ let dArray=[2, 4, -2, 7, -2, 4, 2,];
 let size=dArray.length;
 
 
+///////////////////////////
+// Ova petlja ce uraditi BREAK nakon prve iteracije. Dakle neces uopste doci do kraja provere, a uradices break. 
+// Primer: kada je i == 0 onda ti je dArray[0] == dArray[7 - 0 - 1]. Posto je 2 == 2 onda ce se desiti break, ispisace da ti je niz simetrican.
+// Sta je sa ostalim proverama? :) 
+//////////////////////////
+
 for(let i=0; i<size/2;i++){
     if(dArray[0] == dArray[size-i-1] ){
             console.log("Array is symmetric.");
